@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    
+</head>
+<body>
+  <!-- navbar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    
+    <button class="dropdown-btn">MAKEUP
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+    
+    <div class="dropdown-container">
+
+        <div id="face1">
+            <p> FACE</p>
+            
+        </div>
+        <div id="eye_care1">
+            <p>EYE</p>
+        </div>
+        <div id="lips1">
+            <p>LIPS</p>
+        </div>
+        <div id="nails1">
+            <p>NAILS</p>
+        </div>
+        <div id="brush1">
+            <p>TOOL BRUSHES</p>
+        </div>
+    </div>
+
+    <button class="dropdown-btn">SKIN
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+    
+    <div class="dropdown-container">
+        <div id="eyeCare1">
+            <p>EYE CARE</p>
+        </div>
+        <div id="faceCare1">
+            <p>FACE CARE</p>
+        </div>
+        <div id="bodyCare1">
+            <p>BODY CARE</p>
+        </div>
+    </div>
+    <button class="dropdown-btn">HAIR
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+   
+    <div class="dropdown-container">
+        <div id="haircare1">
+            <p>HAIR CARE</p>
+        </div>
+        <div id="hairloss1">
+            <p>HAIR LOSS</p>
+        </div>
+    </div>
+    <button class="dropdown-btn">PERSONAL CARE
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+   
+    <div class="dropdown-container">
+        <div id="bodybth1">
+            <p>BODY BATH</p>
+        </div>
+        <div id="bathAccess1">
+            <p>BATH ACCESSORIES</p>
+        </div>
+        <div id="bathShower1">
+            <p>BODY SHOWER</p>
+        </div>
+    </div>
+
+    <button class="dropdown-btn">MOM & BABY CARE
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+    
+    <div class="dropdown-container">
+        <div id="babyCare1">
+            <p>BABY CARE</p>
+        </div>
+        <div id="momCare1">
+            <p>MOM CARE</p>
+        </div>
+    </div>
+
+    <button class="dropdown-btn">FRAGRANCE
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+   
+    <div class="dropdown-container">
+        <ul>
+            <li><a href="#">Perfumes</a></li>
+            <li><a href="#">Deodrants roll ons</a></li>
+            <li><a href="#">Body Mist & Spray</a></li>
+        </ul>
+    </div>
+
+    <button class="dropdown-btn">AYURVEDA
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+    
+    <div class="dropdown-container">
+        <div id="natSkin1">
+            <p>NATURAL SKIN</p>
+        </div>
+        <div id="natHair1">
+            <p>NATURAL HAIR</p>
+        </div>
+
+    </div>
+
+    <button class="dropdown-btn">BRANDS
+        <i class="fa fa-caret-down"></i>
+        <hr>
+    </button>
+      
+    <div class="dropdown-container">
+        <div id="allBrands1"></div>
+
+    </div>
+</div>
+<div id="top-img">
+    <a href="index.html"><img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="top_img"></a>
+
+</div>
+<div id="search-filter">
+    <div id="logo">
+        <a href="index.html"><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo"></a>
+    </div>
+    <div id="cateList">
+        
+        <select class="cate searchbox-cate" name="cate">
+            <option value="">All Categories</option>
+            <option value="3">- - Makeup</option>
+            <option value="8">- - - - Face</option>
+            <option value="123">- - - - - - Foundation</option>
+            <option value="124">- - - - - - Blush</option>
+            <option value="125">- - - - - - Highlighters</option>
+            <option value="126">- - - - - - Concealer</option>
+            <option value="127">- - - - - - Compact &amp; Powder</option>
+            <option value="128">- - - - - - Face Primer</option>
+            <option value="129">- - - - - - Makeup Remover</option>
+            <option value="130">- - - - - - Contour</option>
+            <option value="131">- - - - - - Bronzer</option>
+            <option value="132">- - - - - - BB Cream</option>
+            <option value="133">- - - - - - Loose Powder</option>
+            <option value="134">- - - - - - Setting Spray</option>
+            <option value="172">- - - - - - Makeup Kits</option>
+            <option value="175">- - - - - - CC Cream</option>
+            <option value="9">- - - - Eye</option>
+            <option value="135">- - - - - - Eye Shadow</option>
+            <option value="136">- - - - - - Eyeliner</option>
+            <option value="137">- - - - - - False Eyelashes</option>
+            <option value="138">- - - - - - Mascara</option>
+            <option value="139">- - - - - - Eye Brow Enhancers</option>
+            <option value="140">- - - - - - Kajal</option>
+            <option value="141">- - - - - - Under Eye Concealer</option>
+            <option value="142">- - - - - - Eye Makeup Remover</option>
+            <option value="143">- - - - - - Contact Lenses</option>
+            <option value="144">- - - - - - Eye Primer</option>
+            <option value="145">- - - - - - Eye-Palettes</option>
+            <option value="173">- - - - - - Eye Kit </option>
+            <option value="10">- - - - Lips</option>
+            <option value="146">- - - - - - Lipstick</option>
+            <option value="147">- - - - - - Liquid Lipstick</option>
+            <option value="148">- - - - - - Lip Liner</option>
+            <option value="149">- - - - - - Lip Gloss</option>
+            <option value="150">- - - - - - Lip Balm</option>
+            <option value="151">- - - - - - Lip Crayon</option>
+            <option value="152">- - - - - - Lip Stain</option>
+            <option value="153">- - - - - - Lip Plumper</option>
+            <option value="11">- - - - Nails</option>
+            <option value="154">- - - - - - Nail Polish</option>
+            <option value="155">- - - - - - Manicure &amp; Pedicure Kits</option>
+            <option value="156">- - - - - - Nail Care</option>
+            <option value="157">- - - - - - Nail Polish Sets</option>
+            <option value="158">- - - - - - Nail Art Kits</option>
+            <option value="159">- - - - - - Nail Polish Remover</option>
+            <option value="12">- - - - Tools brushes</option>
+            <option value="161">- - - - - - Face Brush</option>
+            <option value="162">- - - - - - Makeup Pouches</option>
+            <option value="163">- - - - - - Sponges &amp; Applicators</option>
+            <option value="164">- - - - - - Eye Brush</option>
+            <option value="166">- - - - - - Blush&nbsp;Brush</option>
+            <option value="167">- - - - - - Tweezers</option>
+            <option value="168">- - - - - - Lip Brush</option>
+            <option value="169">- - - - - - Eyelash Curlers</option>
+            <option value="165">- - - - - - - - Brush Sets</option>
+            <option value="170">- - - - - - Sharpeners</option>
+            <option value="171">- - - - - - Mirrors</option>
+            <option value="4">- - Skin</option>
+            <option value="13">- - - - Body care</option>
+            <option value="77">- - - - - - Body Moisturizers</option>
+            <option value="79">- - - - - - Kits &amp; Combos</option>
+            <option value="81">- - - - - - Body Sun Care</option>
+            <option value="82">- - - - - - Hand Creams</option>
+            <option value="83">- - - - - - Body Toners</option>
+            <option value="84">- - - - - - Hands &amp; Feet</option>
+            <option value="85">- - - - - - Dark Circles &amp; Wrinkles </option>
+            <option value="86">- - - - - - Neck Creams</option>
+            <option value="87">- - - - - - Brightening Lotion</option>
+            <option value="88">- - - - - - Foot Cream</option>
+            <option value="90">- - - - - - Night Cream</option>
+            <option value="92">- - - - - - Hair Remover Cream</option>
+            <option value="95">- - - - - - All Cream</option>
+            <option value="179">- - - - - - Day Cream</option>
+            <option value="14">- - - - Face care</option>
+            <option value="93">- - - - - - Facial Kits</option>
+            <option value="96">- - - - - - Moisturizer</option>
+            <option value="97">- - - - - - Face Wash</option>
+            <option value="98">- - - - - - Facial Wipes</option>
+            <option value="99">- - - - - - Brightening Cream</option>
+            <option value="101">- - - - - - Face Cleansers</option>
+            <option value="102">- - - - - - Face Oil</option>
+            <option value="103">- - - - - - Mask &amp; Peels</option>
+            <option value="105">- - - - - - Toner &amp; Astringents</option>
+            <option value="106">- - - - - - Bleach Creams</option>
+            <option value="107">- - - - - - Anti- Ageing Creams</option>
+            <option value="108">- - - - - - Face Tools</option>
+            <option value="178">- - - - - - Serum</option>
+            <option value="15">- - - - Eye Care</option>
+            <option value="112">- - - - - - Dark Circles</option>
+            <option value="113">- - - - - - Eye Contour Care</option>
+            <option value="114">- - - - - - Eye Cream</option>
+            <option value="115">- - - - - - Eye Masks</option>
+            <option value="116">- - - - - - Eye Serums</option>
+            <option value="117">- - - - - - Under Eye Creams</option>
+            <option value="118">- - - - - - Under Eye Wrinkles</option>
+            <option value="119">- - - - - - Puffiness</option>
+            <option value="5">- - Hair</option>
+            <option value="17">- - - - Hair Care</option>
+            <option value="58">- - - - - - Hair Color/ Dye</option>
+            <option value="59">- - - - - - Gels &amp; Waxes</option>
+            <option value="60">- - - - - - Hair Spray</option>
+            <option value="61">- - - - - - Hairfall &amp; Thinning&nbsp;</option>
+            <option value="62">- - - - - - Dandruff</option>
+            <option value="63">- - - - - - Color Protection</option>
+            <option value="67">- - - - - - Hair Creams &amp; Masks&nbsp;</option>
+            <option value="69">- - - - - - Dry Shampoo</option>
+            <option value="70">- - - - - - Hair Styling</option>
+            <option value="71">- - - - - - Straighteners&nbsp;</option>
+            <option value="18">- - - - Hair Loss</option>
+            <option value="64">- - - - - - Shampoo</option>
+            <option value="66">- - - - - - Hair Oil</option>
+            <option value="68">- - - - - - Hair Serum</option>
+            <option value="72">- - - - - - Conditioner</option>
+            <option value="76">- - - - - - Hair Growth solutions</option>
+            <option value="6">- - Personal Care</option>
+            <option value="19">- - - - Bath &amp; Body</option>
+            <option value="45">- - - - - - Essential Oils</option>
+            <option value="46">- - - - - - Ubtan &amp; Face Packs</option>
+            <option value="51">- - - - - - Creams</option>
+            <option value="52">- - - - - - Foot Cream</option>
+            <option value="78">- - - - - - Body Cleansers</option>
+            <option value="80">- - - - - - Body Massage Oil</option>
+            <option value="89">- - - - - - Body Wash</option>
+            <option value="100">- - - - - - Scrubs &amp; Exfoliants</option>
+            <option value="20">- - - - Bath &amp; Shower</option>
+            <option value="48">- - - - - - Shower Gel</option>
+            <option value="49">- - - - - - Body Soaps</option>
+            <option value="21">- - - - Bathing Accessories</option>
+            <option value="53">- - - - - - Bath Brushes</option>
+            <option value="54">- - - - - - Shower Caps</option>
+            <option value="55">- - - - - - Sponges</option>
+            <option value="56">- - - - - - Loofahs</option>
+            <option value="7">- - Mom &amp; Baby Care</option>
+            <option value="22">- - - - Baby Care</option>
+            <option value="24">- - - - - - Lotions &amp; Creams</option>
+            <option value="25">- - - - - - Oils</option>
+            <option value="26">- - - - - - Shampoo</option>
+            <option value="27">- - - - - - Soaps</option>
+            <option value="28">- - - - - - Wipes</option>
+            <option value="29">- - - - - - Sterilizer &amp; Cleaners</option>
+            <option value="30">- - - - - - Powder</option>
+            <option value="31">- - - - - - Diapers</option>
+            <option value="32">- - - - - - Bath time </option>
+            <option value="33">- - - - - - Rash Cream</option>
+            <option value="23">- - - - Mom Care</option>
+            <option value="34">- - - - - - Lotions &amp; Creams</option>
+            <option value="35">- - - - - - personal Care</option>
+            <option value="174">- - Fragrance</option>
+            <option value="94">- - - - Perfumes</option>
+            <option value="180">- - - - Deodorants-roll-ons</option>
+            <option value="181">- - - - Body Mist /Spray</option>
+            <option value="177">- - Ayurveda</option>
+            <option value="182">- - - - Natural Skin Care </option>
+            <option value="185">- - - - - - Body Wash </option>
+            <option value="186">- - - - - - Body Lotion</option>
+            <option value="187">- - - - - - Sun Protection</option>
+            <option value="188">- - - - - - Face Wash </option>
+            <option value="189">- - - - - - Mask </option>
+            <option value="190">- - - - - - Eye Care</option>
+            <option value="191">- - - - - - Scrub</option>
+            <option value="198">- - - - - - Lip Care </option>
+            <option value="202">- - - - - - Cream</option>
+            <option value="203">- - - - - - Cleansers</option>
+            <option value="204">- - - - - - Gel</option>
+            <option value="205">- - - - - - Pack</option>
+            <option value="183">- - - - Natural Hair Care </option>
+            <option value="192">- - - - - - Hair Oils</option>
+            <option value="193">- - - - - - Hair Serum</option>
+            <option value="196">- - - - - - Hair Gel </option>
+            <option value="197">- - - - - - Shampoo </option>
+            <option value="201">- - - - - - Conditioner </option>
+            <option value="206">- - Latest Offer </option>
+        </select>
+        <input type="search" placeholder="search" autofocus="false">
+        <i class="fa fa-search" aria-hidden="true"></i>
+       
+    </div>
+    <div class="account-box-top">
+        <div><i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div><i class="fa fa-user fa-lg" aria-hidden="true"></i></div>
+        <div>
+           
+            
+            <select name="my_account" id="my_account">
+                <option value="">My Account</option>
+                <option value="login">Login</option>
+                <option value="register"><a href="signup.html">Register</a></option>
+            </select>
+            
+        </div>
+           
+    </div>
+</div>
+<div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div>
+        <a href="mycart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>MY CART</a>
+
+        <div id="mycart">
+
+            <a href="#">You have nothing in your cart</a>
+        </div>
+
+    </div>
+</div>
+
+<nav>
+    <div id="navbar">
+
+        <ul id="main_ul">
+
+            <li>
+                <a href="#">MAKEUP</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="face">
+                            <p>FACE</p>
+                        </div>
+                        <div id="eye_care">
+                            <p>EYE CARE</p>
+
+                        </div>
+                        <div id="lips">
+                            <p>LIPS</p>
+                        </div>
+                        <div id="nails">
+                            <p>NAILS</p>
+                        </div>
+                        <div id="brush">
+                            <p>TOOL BRUSHES</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li>
+                <a href="#">SKIN</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="eyeCare">
+                            <p>EYE CARE</p>
+                        </div>
+                        <div id="faceCare">
+                            <p>FACE CARE</p>
+
+                        </div>
+                        <div id="bodyCare">
+                            <p>BODY CARE</p>
+                        </div>
+                        <div id="skin-sub-menu-image">
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/SKIN_cATA.jpg"
+                                alt="skin-sub-menu-image">
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li>
+                <a href="#">HAIR</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="haircare">
+                            <p>HAIR CARE</p>
+                        </div>
+                        <div id="hairloss">
+                            <p>HAIR LOSS</p>
+
+                        </div>
+
+                        <div id="hair-sub-menu-image">
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/hair_cata.jpg"
+                                alt="hair-sub-menu-image">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </li>
+
+            <li>
+                <a href="#">PERSONAL CARE</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="bodybth">
+                            <p>BODY BATH</p>
+                        </div>
+                        <div id="bathAccess">
+                            <p>BATH ACCESSORIES</p>
+                        </div>
+                        <div id="bathShower">
+                            <p>BATH SHOWER</p>
+                        </div>
+                        <div id="personalcare-sub-menu-image">
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/personal_cata.jpg"
+                                alt="personalcare-sub-menu-image">
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">MOM & BABY CARE</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="babyCare">
+                            <p>BABY CARE</p>
+                        </div>
+                        <div id="momCare">
+                            <p>MOM CARE</p>
+                        </div>
+                        <div id="mom_baby-sub-menu-image">
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/mom_baby_cata.jpg"
+                                alt="mom&baby-sub-menu-image">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </li>
+
+            <li>
+                <a href="#">FRAGRANCE</a>
+                <div class="nav-item">
+                    <div id="frag">
+
+                        <div id="fragrance">
+                            <ul>
+                                <li><a href="#">Perfumes</a></li>
+                                <li><a href="#">Deodrants roll ons</a></li>
+                                <li><a href="#">Body Mist & Spray</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+            <li>
+                <a href="#">AYURVEDA</a>
+                <div class="nav-item">
+                    <div id="main_menu_parent">
+
+                        <div id="natSkin">
+                            <p>NATURAL SKIN</p>
+                        </div>
+                        <div id="natHair">
+                            <p>NATURAL HAIR</p>
+                        </div>
+                        <div id="nature-sub-menu-image">
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/ayurveda_cata.jpg"
+                                alt="nature-sub-menu-image">
+                        </div>
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li>
+                <a href="#">BRANDS</a>
+                <div class="nav-item">
+
+                    <div id="main_menu_parent">
+
+                        <div id="allBrands">
+                            <div>
+                                <h1 class="brand-head">Top Brands</h1>
+                                <button><a href="#">View All</a></button>
+                            </div>
+                            <hr>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </li>
+            <li>
+                <a href="mycart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>MY CART</a>
+                <div class="nav-item">
+                    <div id="mycart">
+
+                        <a href="#">You have nothing in your cart</a>
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+    </div>
+</nav>
+    <h2>CREATE NEW CUSTOMER ACCOUNT</h2>
+    <div id="redirected">
+        <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" > 
+        <button onclick="window.location.href ='https://www.facebook.com/';">Sign in with Facebook </button>     
+        </div>
+        <div>
+        <img src="data:image/png;base64,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"> 
+        <button onclick="window.location.href ='http://www.google.com/';">Sign in with Google</button>
+        </div>
+    </div>
+    <h3>--OR--</h3>
+
+    <!-- form part -->
+    <div>
+     
+        <form id="form"> 
+          <h1>PERSONAL INFORMATION</h1>
+            <div id="box">
+              <div>
+                <div><label >First Name *</label></div>
+                <div><input type="first" name="" id="userfirstname"></div>
+              </div>
+              <div>
+                  <div><label >Last Name *</label></div>
+                  <div><input type="last" name="" id="userlastname"></div>
+              </div>
+            </div>
+             
+             <div>
+                    <div><input type="checkbox" >Sign Up for Newsletter</div>
+                    
+                    <div>
+                      <label >Email *</label>  
+                    <input type="email" name="" id="useremail">  
+                    <label >Phone *</label>
+                    <input type="number" name="" id="usernumber">
+                    <label>Password *</label>
+                    <input type="password" name="" id="userpass">
+                    <label >Confirm Password</label>
+                    <input type="password" name="" id="userconfirmpass">
+                    <input type="submit" value="Create An Account" id="submit">
+                    </div>
+                   
+
+            </div>
+        </form>
+    </div>
+    <!-- Footer section-->
+    <div id="lower">
+      <div>
+        <ul>
+          <h4>CONTACT INFO</h4>
+          <hr />
+          <li>(+91) 7877061041</li>
+          <a href=""><li>support@beautybebo.com</li></a>
+          <a href=""><li>sales@beautybebo.com</li></a>
+          <li>Open time: 10:00AM - 7:00PM</li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <h4>QUICK LINKS</h4>
+          <hr />
+          <a href=""><li>About Us</li></a>
+          <a href=""><li>Contact Us</li></a>
+          <a href=""><li>Terms & Conditions</li></a>
+          <a href=""><li>Privacy Policy</li></a>
+          <a href=""><li>Return and Refund Policy</li></a>
+          <a href=""><li>Shipping Policy</li></a>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h4>CUSTOMER INFO</h4>
+          <hr />
+          <a href=""><li>My Account</li></a>
+          <a href=""><li>Track Your Orders</li></a>
+          <a href=""><li>Order Returns</li></a>
+          <a href=""><li>Wishlist</li></a>
+          <a href=""><li>News & Events</li></a>
+          <a href=""><li>FAQ</li></a>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h4>CATEGORIES</h4>
+          <hr />
+          <a href=""><li>Makeup</li></a>
+          <a href=""><li>Skin</li></a>
+          <a href=""><li>Hair</li></a>
+          <a href=""><li>Personal Care</li></a>
+          <a href=""><li>Mom & Baby Care</li></a>
+          <a href=""><li>Fragrance</li></a>
+          <a href=""><li>Ayurveda</li></a>
+        </ul>
+      </div>
+
+      <div id="lastdiv">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <h3 id="lasth3">Signup For Newsletter</h3>
+          <form id="lastform">
+            <input
+              id="lastinput"
+              type="email"
+              placeholder="Enter Your Email"
+              required
+            /><button id="btn3">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="signup.js">
+
+</script>
+<script src="common.js"></script>

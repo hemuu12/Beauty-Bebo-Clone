@@ -1,0 +1,939 @@
+
+/* NAVBAR SECTION */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+/* ===============================home page top image css==========*/
+#top-img{
+margin: auto;
+box-sizing: border-box;
+}
+#top-img>img{
+  display: block;
+   width: 99%;
+  margin: auto;
+}
+
+/* ===============================home page search, filter top of home page etc css==========*/
+#search-filter{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+.account-box-top{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.account-box-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.account-box-top>div:first-child{
+ border: 1px solid black;
+ text-align: center;
+ 
+ padding: 8px; 
+ border-radius: 7%;
+}
+.account-box-top>div:first-child:hover{
+background-color:#dd0285;
+}
+.account-box-top>div:nth-child(2){
+
+text-align: center;
+padding: 8px;
+margin-left:5px ;
+border: 1px solid gray;
+border-radius: 7%;
+
+}
+.account-box-top>div:nth-child(2):hover{
+background-color:#dd0285;
+}
+#search-filter>.account-box-top>p:last-child{
+ padding-left:5px ;
+}
+#search-filter>.account-box-top>p:last-child:hover{
+
+color: #dd0285;
+}  
+
+/* search and category filter */
+#search-filter>#cateList>select,  input{
+border: 0.5px solid lightgray;
+}
+#search-filter>#cateList{
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+}
+#search-filter>#cateList>select{
+padding: 10px 10px;
+color: #818181;
+}
+#search-filter>#cateList>input{
+padding: 10px 60px;
+}
+
+#search-filter>#cateList>input+i{
+padding: 10px;
+background-color:#dd0285;
+color: white;
+}
+.account-box-top>div:last-child>select{
+border: none;
+
+}
+
+
+/* ======================this is main navigationbar of top================== */
+
+nav{  background-color: #dd0285;}
+nav>#navbar{
+  width: 99%;
+  position: relative;
+
+}
+nav>#navbar>ul{
+ 
+  margin: auto;
+  
+list-style-type: none;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 5px;
+ font-size: 16px;
+ /* border: 1px solid red; */
+
+}
+nav>#navbar>ul>li{
+  margin-left: 3%;
+  
+}
+nav>#navbar>ul>li:last-child{
+ margin-left: auto;
+ margin-right: 5%;
+}
+nav>#navbar>ul li>div{
+   
+  display: none;
+}
+nav>#navbar>ul>li>a{
+color:white;
+padding: 17px 0px;
+font-family: 'PT Sans', sans-serif;
+
+font-size: 14px;
+font-weight: 600;
+
+}
+nav>#navbar>ul>li:hover .nav-item{
+  
+display:block;
+width: 90vw;
+height: auto;
+position: absolute;
+top:28px;
+left: 3%;
+/* text-align: center; */
+background-color: white;
+z-index: 9;
+
+}
+nav>#navbar>ul>li:hover .nav-item>#main_menu_parent{
+padding:20px; 
+}
+nav>#navbar>ul>li:hover .nav-item>#main_menu_parent>div>p{
+padding: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 14px;
+
+}
+
+nav>#navbar>ul>li:hover .nav-item>#main_menu_parent>div>ul>li>a{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
+}
+nav>#navbar>ul>li:hover .nav-item>#main_menu_parent>div>ul>li>a:hover{
+  color: #dd0285;  
+ 
+}
+nav>#navbar>.nav-item
+{
+  margin: auto;
+}
+nav>#navbar:hover .nav-item:nth-child(2){
+  margin-top:30px ;
+}
+
+/* css for skin care section */
+
+.nav-item>#main_menu_parent{
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  grid-template-rows: auto;
+  
+  
+} 
+#main_ul>li:nth-child(2)>.nav-item>#main_menu_parent{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 3fr;
+grid-template-rows: auto;
+margin: auto;
+/* border: 1px solid red; */
+
+}
+
+#main_ul>li:nth-child(2)>.nav-item>#main_menu_parent>#skin-sub-menu-image>img{
+  float: right;
+}
+
+
+.nav-item>#main_menu_parent>#face>ul{
+  list-style-type: none;
+} 
+.nav-item>#main_menu_parent>div>ul li{
+  padding:5px
+
+}
+.nav-item>#main_menu_parent>div>ul>li>a{
+  /* color: #222222;
+   */
+  color: gray;
+  text-align: left;
+  }
+
+/* css for personalcare section */   
+
+#main_ul>li:nth-child(3)>.nav-item>#main_menu_parent{
+
+  display: grid;
+   grid-template-columns: 1fr 1fr 3fr;
+   grid-template-rows: auto;
+   margin: auto;
+ }
+ #main_ul>li:nth-child(3)>.nav-item>#main_menu_parent>#hair-sub-menu-image>img{
+     display: block;
+     width: 100%;
+ }
+ #main_ul>li:nth-child(4)>.nav-item>#main_menu_parent{
+
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr 3fr;
+   grid-template-rows: auto;
+   margin: auto;
+ }
+
+
+/* css for mom and baby care section */  
+#main_ul>li:nth-child(5)>.nav-item>#main_menu_parent{
+
+  display: grid;
+   grid-template-columns: 1fr 1fr 3fr;
+   grid-template-rows: auto;
+
+   
+   
+ }
+ #main_ul>li:nth-child(5)>.nav-item>#main_menu_parent>#mom_baby-sub-menu-image{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  
+ }
+ #main_ul>li:nth-child(5)>.nav-item>#main_menu_parent>#mom_baby-sub-menu-image>img{
+  width: 100%;
+  display: block;
+  margin-right: 30px;
+  margin-top: 10px;
+ }
+
+  /* css for mom and baby care section */  
+#main_ul>li:nth-child(7)>.nav-item>#main_menu_parent{
+
+  display: grid;
+   grid-template-columns: 1fr 1fr 3fr;
+   grid-template-rows: auto;
+}
+
+ #main_ul>li:nth-child(7)>.nav-item>#main_menu_parent>#mom_baby-sub-menu-image>img{
+  width: 100%;
+  display: block;
+  margin-right: 30px;
+  margin-top: 10px;
+  border: 2px solid red;
+  
+ } 
+/* brand css  */
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ }
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>div:first-child{
+   display: flex; 
+   justify-content: space-between; 
+   margin-top: 3%;
+   
+ }
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>div:first-child>button{
+  border: none;
+  padding: 10px 15px;
+  background-color: red;
+  border: 2px solid red;
+ }
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>div:first-child>button>a{
+  color: white;
+  
+ }
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>ul>li>a{
+   text-align: center;
+   color: rgb(20, 19, 19);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600; 
+ }
+
+
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    gap: 20px 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+ }
+ #main_ul>li:nth-child(8)>.nav-item>#main_menu_parent>#allBrands>ul>li{
+  padding: 15px;
+  border: 1px solid grey;
+ }
+ .brand-head{
+   display: inline-block;
+ }
+ /* nav>#navbar>ul>li:hover .nav-item{
+
+ } */
+ nav>#navbar>ul>li:nth-child(6){
+  position: relative;
+ }
+ nav>#navbar>ul>li:nth-child(6)>.nav-item>#frag{
+  display: none;
+ }
+ nav>#navbar>ul>li:nth-child(6):hover .nav-item>#frag{
+  display: block;
+  position: absolute;
+  width: 28%;
+  top:-4px;
+ 
+}
+nav>#navbar>ul>li:nth-child(6):hover .nav-item>#frag>#fragrance>ul{
+  margin: auto;
+  background-color: white;  
+  border-radius: 3%;
+}
+nav>#navbar>ul>li:nth-child(6) .nav-item>#frag>#fragrance>ul li{
+  padding: 6px;
+}
+nav>#navbar>ul>li:nth-child(6) .nav-item>#frag>#fragrance>ul li a{
+  color:grey;
+  font-size:14px;
+  padding: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+nav>#navbar>ul>li:nth-child(6):hover .nav-item>#frag>#fragrance>ul li a:hover{
+  
+    color:#dd0285;
+}    
+a{display: block;}
+
+nav>#navbar>ul>li:last-child{
+position: relative;
+box-sizing: border-box;
+
+}
+nav>#navbar>ul>li:last-child>a>i{
+padding: 0px 8px;
+font-size: 15px;
+}
+nav>#navbar>ul>li .nav-item>#mycart{
+display: none;
+}
+nav>#navbar>ul>li:last-child:hover .nav-item>#mycart{
+display: block;
+position: absolute;
+top:-5px;
+left: -50px;
+width: 15%;
+height: 100px;
+padding: 30px 30px;
+margin: auto;
+background-color: #f1f1f1;
+text-align: center;
+}
+/*=========================================================================================== */
+/* second navabar css */
+section{
+width: 94%;
+
+margin: auto;
+margin-top: 1%;
+display: flex;
+justify-content: space-between;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section>#navbar2{
+width: 24vw;
+
+padding: 5px;
+
+}
+section>#navbar2>a:first-of-type{
+font-family: 'Roboto', sans-serif;
+
+}
+section>#navbar2>a:first-child{
+padding: 10px;
+
+color: black ;
+}
+section>#navbar2>ul{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
+
+}
+section>#navbar2>ul li{
+position: relative;
+
+}
+
+section>#navbar2>ul li a{
+padding: 5px;
+display: block;
+font-size: 14px;
+color:grey;
+
+}
+section>#navbar2>ul>li>a>span{
+ float: right;
+ padding-right: 20px;
+}
+
+section>#navbar2>ul li a>img{
+vertical-align: middle;
+}
+section>#navbar2>ul>li>div{
+
+display: none;
+}
+
+section>#navbar2>ul>li:hover >div{
+display: flex;
+justify-content: space-evenly;
+position: absolute;
+ left:100%;
+ top: 4px;
+ width: 70vw;
+background-color: aliceblue;
+overflow: hidden;
+z-index: 8;
+padding: 20px;
+
+} 
+section>#navbar2>ul>li:hover >div>div>ul{
+overflow: hidden;
+
+}
+section>#navbar2>ul>li:hover ul>li>a{
+padding: 4px;
+
+overflow: hidden;
+}
+section>#navbar2>ul>li:hover>div>div>p:first-child{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 14px;
+padding-left: 4px;
+}
+section>#navbar2>ul>li:hover ul>li>a:hover{
+color:#dd0285;
+}
+section>#navbar2>ul>li>a:hover{
+color:#dd0285;
+}
+section>#navbar2>ul>li>a>img{
+ width: 27px;
+ padding: 1px 3px;
+}  
+section>#navbar2>ul>li>div>div:last-child{
+align-self: center;
+} 
+section>#navbar2>ul>li>div>div:last-child>img{
+width: 70%;
+float: right;
+}
+section>#navbar2>ul>li>div>div:nth-child(4)>img{
+width: 50%;
+float: right;
+}
+
+/* ========================================================== */
+/* ===========================slider========================== */
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+.text {font-size: 11px}
+}
+#mySidebar, #main{display: none;}
+/* mediaquery===================================================================== */
+/* this is sidebar css */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@media screen and (max-width: 992px) {
+  section, nav{display: none;}
+  #mySidebar, #main{display: block;}
+/* ===============================home page search, filter top of home page etc css==========*/
+#search-filter{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+#cateList>select{
+display: none;
+}
+#search-filter>#logo{
+
+order: 0; 
+}
+
+#search-filter>#cataList{
+order:2;
+margin: 10px;
+background-color: #818181;
+} 
+#search-filter>.account-box-top{
+margin-left: auto;
+order:1;
+
+} 
+
+
+
+
+  /* css for main appearing nav cart */
+   #mySidebar>.dropdown-container>div>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    padding-left:28px ;
+   }
+  .dropdown-container {
+      display: none;
+    
+      padding-left: 8px;
+    }
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+   .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+   
+  .sidebar {
+      border: 2px solid white;
+      background-color: red;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+        
+      font-size: 14px;
+     padding-top:60px;
+  
+    }
+    .sidebar hr{
+      width: 98%;
+      margin: 5px auto;
+    
+    }
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+
+    }
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color:#dd0285;
+      color: white;
+      
+      border: none;
+    }
+    
+    .openbtn:hover {
+      background-color: #dd0285;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #dd0285;
+    }
+    #main>div>a:first-child{
+      position: relative;
+      
+    }
+    #main>div>a{
+      padding: 0px 10px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    #main>div>#mycart{
+      display: none;
+      }
+
+   #main>div:hover #mycart{
+     position: absolute;
+      top:8%;
+     display: block;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 3%;
+    }
+
+}  
+
+
+    /* UPPER SECTION CSS */
+    #heading{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #social{
+      width: 60%;
+      height: auto;
+      display: flex;
+      margin: auto;
+      justify-content: space-around;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #fbimg{
+      width: 320px;
+      height: 100px;
+    }
+    #googleimg{
+      width: 320px;
+      height: 100px;
+    }
+    #login1{
+      border:none;
+      cursor: pointer;
+    }
+    #login2{
+      border:none;
+      cursor: pointer;
+    }
+    div+p{
+      text-align: center;
+      font-size: larger;
+      margin-top: 20px;
+    }
+
+  #uppersection{
+    display: flex;
+    width: 90%;
+    height: 400px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #uppersection>div{
+    width: 45%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+    .in {
+    width: 98%;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  #btn1{
+    width: 100px;
+    height:30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #dd0285;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  /* #btn1:hover{
+    background-color: #dd0285;
+    color: white;
+  } */
+  #btn2{
+    height: 30px;
+    width: 200px;
+    margin-top: 40px;
+    background-color:#dd0285;
+    color: white;
+    border: none;
+    border: none;cursor: pointer;
+  }
+  
+  /* #btn2:hover{
+    background-color: #dd0285;
+    color: white;
+  } */
+
+  .subhead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-style:normal;
+  }
+  .ptag{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  form>h4{
+    margin-top: 30px;
+  }
+
+/* CSS FOR LOWER SECTION */
+
+#lower {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: #232323;
+    color: whitesmoke;
+    justify-content: space-around;
+    line-height: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    border-top: 1px #dd0285 solid;
+  }
+  #lower > div {
+    width: 20%;
+    padding-left: 20px;
+  }
+  #lower>div:last-child{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+  }
+  #lastdiv>div{
+    padding: 20px;
+    width: 30%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #lastdiv>div:last-child{
+    width: 45%;
+  }
+
+  div>img{
+    width: 80%;
+  }
+  .list>a>li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: grey;
+    list-style-type: circle;
+  }
+  .list>a>li:hover {
+    color: #dd0285;
+  }
+  hr {
+    margin-bottom: 20px;
+    color: crimson;
+    border: 1px solid;
+  }
+  h4 {
+    margin-top: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight:lighter;
+    font-style: italic;
+  }
+
+  /* a {
+    text-decoration: none;
+    color: black;
+  } */
+
+  #lastform{
+    display:flex;
+  width: 350px;
+  }
+  
+  #lastinput{
+    flex-grow:3;
+    border: none;
+    width: 80px;
+    height: 30px;
+    padding-left: 10px;
+  }
+  
+  #lastinput:focus{
+    outline: none;
+  }
+  
+  #btn3{
+    color:white;
+    background-color: #dd0285;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 30px;
+    /* margin-top: 10px; */
+    width: 80px;
+  }
+
+  h5{
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    border-top: 0.5px solid silver;
+    border-bottom: 0.5px solid silver;
+    font-size: larger;
+    font-weight: lighter;
+  }
+
+/* MEDIA QUERIES FOR MEDIUM SCREEN SIZE */
+
+  @media only screen and (min-width: 480px) and (max-width: 720px) {
+  
+    .upper{
+        display: grid;
+        width: 60%;
+        height: 400px;
+        margin-top: 30px;
+      }
+      .upper>div{
+        width: 80%;
+        margin-top: 30px;
+      }  
+
+      #lower {
+        width: 100%;
+        height: 1200px;
+        margin-top: 400px;
+      }
+      
+  #lower > div {
+    width: 50%;
+  }
+  #lower>div:last-child{
+    padding: 10px;
+    height: auto;
+    display: grid;
+    justify-content: space-between;
+    align-items:center ;
+  }
+  #lastdiv>div{
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #lastdiv>div:last-child{
+    width: 45%;
+  }
+  h3+input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  #btn3 {
+    height: 40px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  }
+  
