@@ -10,11 +10,9 @@ Buy Beauty and Cosmetic Products Online From Beauty Bebo. Shop Makeup, Skincare,
 
 <table  align=center>
   <tr>
-    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" height=100></td>
-    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"  height=100   width=150 ></td>
-    <td align=center> <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--60EL_RNJ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gkgxaoegocynro97ipsz.png"  height=100   width=150 ></td>
-    <td align=center> <img src="https://user-images.githubusercontent.com/8939680/57233883-20344080-6fe5-11e9-8169-1eeb4c782683.png"  height=100  width=150 ></td>
-    <td align=center> <img src="https://erons-blog.netlify.app/media/building-react-components-with-chakra-ui.png"  width=120  ></td>
+    <td align=center> <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" height=100></td>
+    <td align=center> <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"  height=100   width=150 ></td>
+    <td align=center> <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png"  height=100   width=150 ></td>
   </tr>
 </table>
 
