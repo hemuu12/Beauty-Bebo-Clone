@@ -27,31 +27,22 @@ Buy Beauty and Cosmetic Products Online From Beauty Bebo. Shop Makeup, Skincare,
 
 - ## Home page
 
-     <img width="949" alt="Home1" src="">
+     <img width="949" alt="Home1" src="https://i.postimg.cc/bNgqpXjC/Screenshot-16.png">
 
-     <img width="947" alt="Home2" src="">
-
-- ## Sign-Up page
-
-     <img width="959" alt="SignupPage" src="">
-
+    
 - ## Login page
 
-     <img width="959" alt="LoginPage" src="">
+     <img width="959" alt="LoginPage" src="https://i.postimg.cc/65b5Cs17/Screenshot-19.png">
 
 - ## Product page
 
-     <img width="950" alt="ProductPage" src="">
+     <img width="950" alt="ProductPage" src="https://i.postimg.cc/SQtG5RnD/Screenshot-17.png">
 
 
 - ## Cart page
 
-     <img width="960" alt="CartPage" src="">
+     <img width="960" alt="CartPage" src="https://i.postimg.cc/xTZncvcM/Screenshot-20.png">
 
-- ## Checkout page
-
-   
-   
 
 ## Show your support
 
